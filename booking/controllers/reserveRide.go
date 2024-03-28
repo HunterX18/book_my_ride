@@ -47,5 +47,6 @@ func ReserveRide(c *fiber.Ctx) error {
 	}
 
 	txn.Commit();
+
 	return c.Status(200).JSON(reservedRide)
 }
